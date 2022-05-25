@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Cinemas</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <header>
+    <h4>VISION CINEMAS</h4>
+  </header>
+  <ul>
+    <li><a href="feedback.html">FAQ</a></li>
+    <li><a href="Tickets.html">TICKETS</a></li>
+    <li><a href="upcoming.html">UPCOMING</a></li>
+    <li><a href="VExperience.html">V-Experience</a></li>
+    <li><a href="movie_page.html">MOVIES</a></li>
+    <li><a class="active" href="index.html">HOME</a></li>
+  </ul>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h2>VISION CINEMAS CURRENT MOVIES LIST</h2><h6>Be sure to come for a fun filled unique experience</h6>
+    <hr>
+    <section>
+      <aside class="attraction">
+        <p><h2>viewing now!!!</h2><h5>P200.00 standard fee/P500.00 V.I.P/P300.00 couple</h5>
+          <h5>Viewing Times 08am-12pm  02pm-5pm 06pm-08pm 09PM-till late</h5></p>
+      </aside>
+    </section>
+
+    <h2>GENRE</h2>
+
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('docies')"> documentary</button>
+      <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+      <button class="btn" onclick="filterSelection('Romance')"> Romance</button>
+      <button class="btn" onclick="filterSelection('Rom-com')"> Rom-Com</button>
+      <button class="btn" onclick="filterSelection('comedy')"> Comedy</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+
+      <div class="column docies">
+        <div class="content">
+          <img src="Images/pic15.jpg" alt="docies" style="width:100%" style="height:50%">
+          <h4>Data Science Tribules</h4>
+          <p>Meet Kefilwe Ramautsana a 21 year old young woman tackling, the highs and lows of being a woman in tech,we take a look at her religion (christianity) in play, as God walks with her through the problems that come with her journey of  studying to be a Data Scientist
+            <h5>Viewing: DocDays every Monday </h5></p>
+        </div>
+      </div>
+  
+      <div class="column docies">
+        <div class="content">
+          <img src="Images/pic13.jpg" alt="docies" style="width:100%" style="height:90%">
+          <h4>Downfall: The Case Against Boeing</h4>
+          <p>An investigation into the two Boeing 737 MAX crashes that killed 346 people, exploring both the root causes and the human cost. That same month, Boeing directors agreed with shareholders to settle a lawsuit over the board's safety oversight for $237.5 million, while Reuters reported that the two crashes had cost Boeing $20 billion   
+                    <h5>Viewing: DocDays every Monday</h5></p>
+        </div>
+      </div>
+
+      
+
+      <div class="column docies">
+        <div class="content">
+          <img src="Images/pic14.jpg" alt="docies" style="width:95%" style="height:80%">
+          <h4>13th</h4>
+          <p>Filmmaker Ava DuVernay explores the history of racial inequality in the United States, focusing on the fact that the nation's prisons are disproportionately filled with African-American. 13th, draws out a picture of slavery and racism that still exists today in America; although not in a tangible form, mentally. 13th points out how much harm can be caused by slavery, even though the constitution negates such a possibility.      
+                 <h5>Viewing: DocDays every Monday </h5></p>
+        </div>
+      </div>
+
+      <div class="column thriller">
+        <div class="content">
+          <img src="Images/pic1.jpg" alt="Thriller" style="width:90%" style="height:60%">
+          <h4>Nobody</h4>
+          <p>Hutch Mansell finds his life changed when a few thieves break into his house. While trying to punish the thieves, he ends up earning the wrath of a crime lord.
+              <h6>viewing:Tuesdays till further notice</h6> </p>
+        </div>
+      </div>
+      <div class="column thriller">
+        <div class="content">
+          <img src="Images/pic2.jpg" alt="Thriller" style="width:100%">
+          <h4>OLD</h4>
+          <p>A couple who is about to get divorced takes their children to a tropical resort on a vacation. Their trip soon turns into a nightmare when they end up on a secluded beach that makes them age rapidly.
+          <h6>Viewing:Mondays till further notice</h6> </p>
+        </div>
+      </div>
+
+      <div class="column thriller">
+        <div class="content">
+          <img src="Images/pic3.jpg" alt="Thriller" style="width:100%">
+          <h4>Deep Water</h4>
+          <p>A well-to-do husband who allows his wife to have
+             affairs in order to avoid a divorce becomes a prime suspect in the disappearance of her lovers. Genre: Mystery & thriller<h6>Viewing:Every day is a thriller day</h6></p>
+        </div>
+
+      </div>  
+    </div>
+
+    <div class="column Romance">
+        <div class="content">
+          <img src="Images/pic8.jpg" alt="Romance" style="width:90%" style="height:60%">
+          <h4>Emma</h4>
+          <p>a self-proclaimed matchmaker who meddles in the love lives of her friends. Her misguided matches and romantic missteps lead her to find love that has been there all along.
+            <h6>Viewing:Sundays till further notice</h6> </p>
+        </div>
+      </div>
+
+      <div class="column Romance">
+        <div class="content">
+          <img src="Images/pic9.jpg" alt="Romance" style="width:95%">
+          <h4>Call Me by Your Name</h4>
+          <p>Elio, a teenager, develops feelings for Oliver, his father's temporary assistant. 
+            <h6>Viewing:Sundays till further notice</h6></p>
+        </div>
+      </div>
+
+    <div class="column Romance">
+      <div class="content">
+        <img src="Images/pic7.jpg" alt="Romance" style="width:80%" style="height:100%">
+        <h4>Along for the Ride</h4>
+        <p>During the summer before college, Auden meets the mysterious Eli, a fellow insomniac. While the seaside town of Colby sleeps, the two embark on nightly quests to help Auden experience the fun, carefree life she never knew she wanted.
+          <h6>Viewing:Sundays till further notice</h6> </p>
+      </div>
+    </div> 
+
+    <div class="column Rom-com">
+      <div class="content">
+        <img src="Images/pic10.jpg" alt="Rom-com" style="width:100%" style="height:110%">
+        <h4>He's all that</h4>
+        <p>An influencer who specializes in makeovers bets that she can transform an unpopular classmate into a prom king.
+          <h5>Viewing:Sundays till further notice</h5></p>
+      </div>
+    </div>
+
+    <div class="column Rom-com">
+      <div class="content">
+        <img src="Images/pic11.jpg" alt="Rom-com" style="width:100%" style="height:90%">
+        <h4>Sweet & Sour</h4>
+        <p>Faced with real-world opportunities and challenges, a couple endures the highs and lows of trying to make a long-distance relationship survive.
+          <h5>Viewing:Sundays till further notice</h5></p>
+      </div>
+    </div>
+
+    <div class="column Rom-com">
+      <div class="content">
+        <img src="Images/pic12.jpg" alt="Rom-com" style="width:100%"  style="height:90%">
+        <h4>Me Before You</h4>
+        <p>After becoming unemployed, Louisa Clark is forced to accept one which requires her to take care of Will Traynor, a paralysed man. The two of them soon bond with each other. 
+          <h5>Viewing:Sundays till further notice</h5></p>
+      </div>
+    </div>
+
+
+    <div class="column comedy">
+      <div class="content">
+        <img src="Images/pic4.jpg" alt="comedy" style="width:110%">
+        <h4>The Hustle</h4>
+        <p>Two female crooks who come from very different backgrounds meet on their way to the French Riviera and decide to work together and swindle Thomas Westerburg, a billionaire. 
+          <h5>Viewings:laughter for all days</h5></p>
+      </div>
+    </div>
+
+
+
+      <div class="column comedy">
+        <div class="content">
+          <img src="Images/pic5.jpg" alt="comedy" style="width:110%" style="height:120%">
+          <h4>Free Guy</h4>
+          <p>When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story
+            .<h5>Viewings:laughter for all days</h5></p>
+        </div>
+        </div>
+      
+      <div class="column comedy">
+        <div class="content">
+          <img src="Images/pic6.jpg" alt="comedy" style="width:100%" style="height:100%">
+          <h4>The Intern</h4>
+          <p>a 70-year-old widower, realises that he is not cut out for retirement. He then applies to become a senior intern for a sceptical boss at an online fashion site.<h5>Viewings:laughter for all days</h5></p>
+        </div>
+      </div>
+    
+     
+    
+   
+      
+
+        </div>
+      <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <footer class="footer" style="color:black;text-align: center;padding:10%;">
+      <div>
+        <div class="footer">
+          <p>DESIGNED BY KEFILWE RAMAUTSANA</p>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+</body>
+
+</html>

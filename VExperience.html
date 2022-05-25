@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Cinemas</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <header>
+    <h4>VISION CINEMAS</h4>
+  </header>
+  <ul>
+    <li><a href="feedback.html">FAQ</a></li>
+    <li><a href="Tickets.html">TICKETS</a></li>
+    <li><a href="upcoming.html">UPCOMING</a></li>
+    <li><a href="VExperience.html">V-Experience</a></li>
+    <li><a href="movie_page.html">MOVIES</a></li>
+    <li><a class="active" href="index.html">HOME</a></li>
+  </ul>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h2>Come Experience Feel Look Experience</h2><h6>Be sure to come for a fun filled unique experience</h6>
+    <hr>
+   
+
+    <h2>2022 @ VISION CINEMAS</h2>
+
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Luxury Experience @ Vision Cinema</button>
+      
+
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column coming">
+        <div class="content">
+          <img src="Images/senepe1.jpg" alt="coming" style="width:100%">
+          <h4>Deluxe Cinema Experience</h4>
+          <p>Want to feel what it’s like to fly first class? Welcome onboard the Vision Cinemas Luxurious 
+            experience. Fully-reclining, extra-wide seats, ample legroom and pillowy-soft head and foot 
+            rests.VISION CINEMAS is bring luxury to you this fall.
+              <h6>come and be pampered @ vision cinemas</h6> </p>
+        </div>
+      </div>
+      <div class="column coming">
+        <div class="content">
+          <img src="Images/senepe2.jpeg" alt="coming" style="width:100%">
+          <h4>Food & Drinks</h4>
+          <p>Turn your trip to NCC Acacia into a cheerful dining experience with our wide selection of made-for-cinema hot meals. Treat yourself to Burgers, Pizzas , hot dogs or chicken strips or share popcorn and chocolate-covered treats.
+        <h6>come and be pampered @ vision cinemas</h6> </p>
+        </div>
+      </div>
+
+      <div class="column coming">
+        <div class="content">
+          <img src="Images/senepe3.jpg" alt="coming" style="width:100%">
+          <h4>Luxe & Dine</h4>
+          <p>Imagine the indulgent first-class comfort of our Luxe seating combined with a restaurant-style menu and waiter service. Enjoy a sumptuous feast in your cinema seat.
+            <h6>come and be pampered @ vision cinemas</h6></p>
+        </div>
+
+      </div>  
+    </div>
+    <div class="column comedy">
+      <div class="content">
+        <img src="Images/senepe4.jpg" alt="coming" style="width:100%">
+        <h4>The Vision Cinema 4D EXPERIENCE</h4>
+        <p>Cinema 4D is a professional 3D modeling, animation, simulation and rendering software solution. Its fast, powerful, flexible and stable toolset make 3D workflows more accessible and efficient for design, motion graphics, VFX, AR/MR/VR only @vc. 
+          <h5>come and be pampered @ vision cinemas</h5></p>
+      </div>
+    </div>
+
+
+
+
+        </div>
+
+      <hr>
+      <section class="persuation">
+        <article>
+          <p><h6></h6>The best times to watch movies is winter, Vision heated cinemas.<h5>your one stop cinema , imagine it and see it</h5></p>
+        </article>
+      </section>
+
+
+
+
+      <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <footer class="footer" style="color:black;text-align: center;padding:10%;">
+      <div>
+        <div class="footer">
+          <p>DESIGNED BY KEFILWE RAMAUTSANA</p>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+</body>
+
+</html>
